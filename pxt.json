@@ -1,7 +1,7 @@
 {
     "name": "pxt-cc2",
     "version": "0.1.0",
-    "description": "",
+    "description": "Extension for the CalliCross I2C traffic simulation ",
     "dependencies": {
         "core": "*",
         "radio": "*"

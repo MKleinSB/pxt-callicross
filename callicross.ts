@@ -3,7 +3,7 @@
  *  für die I2C CalliCrosserweiterung
  *  für Calliope mini und micro:bit
  * 
- *  CC by SA Michael Klein 11.10.2021
+ *  CC by SA Michael Klein 13.11.2021
  */
 
 const enum REG_MCP {

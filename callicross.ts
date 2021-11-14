@@ -87,7 +87,7 @@ namespace CalliCross {
     //% port.fieldEditor="gridpicker" port.fieldOptions.columns=2
     export function tasterPressed(port: Schalter): boolean { 
         let name:number=port      
-        return MCPButtonPressed(name);
+        return MCPInputClosed(name);
     }
  
     //% blockId="carDetected"
@@ -96,7 +96,7 @@ namespace CalliCross {
     //% port.fieldEditor="gridpicker" port.fieldOptions.columns=2
     export function carDetected(port: Cars): boolean { 
         let name:number=port      
-        return MCPButtonPressed(name);
+        return MCPInputClosed(name);
     }
 
     //% blockId=onTasterPressed block="on Button 🔘 %taster pressed"
@@ -107,12 +107,12 @@ namespace CalliCross {
          control.runInParallel(() => {
             while (true) {
              if (taster==Schalter.S1) { 
-               if (CalliCross.MCPButtonPressed(Ports.GPB4)) {
+               if (CalliCross.MCPInputClosed(Ports.GPB4)) {
 	           control.raiseEvent(tasterEventID + taster, Ports.GPB4);
                 }
             } else
               if (taster==Schalter.S2) {
-                if (CalliCross.MCPButtonPressed(Ports.GPB5)) {
+                if (CalliCross.MCPInputClosed(Ports.GPB5)) {
 	            control.raiseEvent(tasterEventID + taster, Ports.GPB5);
                 }
             }                
@@ -130,12 +130,12 @@ namespace CalliCross {
          control.runInParallel(() => {
             while (true) {
              if (taster==Cars.C1) { 
-               if (CalliCross.MCPButtonPressed(Ports.GPA7)) {
+               if (CalliCross.MCPInputClosed(Ports.GPA7)) {
 	           control.raiseEvent(tasterEventID + taster, Ports.GPA7);
                 }
             } else
               if (taster==Cars.C2) {
-                if (CalliCross.MCPButtonPressed(Ports.GPA6)) {
+                if (CalliCross.MCPInputClosed(Ports.GPA6)) {
 	            control.raiseEvent(tasterEventID + taster, Ports.GPA6);
                 }
             }                
@@ -293,14 +293,14 @@ namespace CalliCross {
      * Returns ´true´ when the port is connected to ground.
      * The port of the MCP23017 must be set as input.
      */
-    //% blockId="MCPButtonPressed"
+    //% blockId="MCPInputClosed"
     //% block="input %port closed"
     //% block.loc.de="Eingang %port geschlossen"
     //% jsdoc.loc.de="Gibt ´wahr´ zurück wenn der Eingang mit GND verbunden wurde, der Port des MCP23017 muss als Eingang festgelegt sein."
     //% port.fieldEditor="gridpicker" port.fieldOptions.columns=4
     //% weight=87
     //% group="IO"
-    export function MCPButtonPressed(port: Ports): boolean {
+    export function MCPInputClosed(port: Ports): boolean {
         let name:number=port;
         let ergebnis:boolean=false;
         if (name > 0 && name < 9) { // Register A

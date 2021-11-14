@@ -1,5 +1,5 @@
 {
-    "name": "pxt-cc2",
+    "name": "pxt-callicross",
     "version": "1.2.0",
     "description": "Extension for the CalliCross I2C traffic simulation ",
     "dependencies": {

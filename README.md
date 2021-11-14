@@ -8,7 +8,7 @@
 |                                            _Callicross I2C Hardware_                                            |                                   _Callicross Makecode Blocks_                                   |
 
 ## CalliCross
-Mehr zu CalliCross auf hackster! https://www.hackster.io/MKlein/callicross-01cc4b
+Mehr zu CalliCross auf hackster! https://www.hackster.io/MKlein/callicross-37aea4
 
 ## Blöcke 
 Alle Funktionen von Callicross werden über einen I2C Portexpander, dem MCP23017 gesteuert

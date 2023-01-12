@@ -3,7 +3,7 @@
 
 ## Callicross I2C MCP23017 traffic lights for Calliope mini and micro:bit
 
-| ![Callicross](https://github.com/MKleinSB/pxt-callicross/blob/master/callicross1.jpg "CalliCross & Calliope") | ![Blocks](https://github.com/MKleinSB/pxt-callicross/blob/master/callicross2.jpg "Blocks") |
+| ![Callicross](https://github.com/MKleinSB/pxt-callicross/blob/master/1.jpg "CalliCross & Calliope") | ![Blocks](https://github.com/MKleinSB/pxt-callicross/blob/master/callicross2.jpg "Blocks") |
 | :----------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |
 |                                            _Callicross I2C Hardware_                                            |                                   _Callicross Makecode Blocks_                                   |
 
